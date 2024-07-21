@@ -1,0 +1,86 @@
+.toast-container{
+    position: fixed;
+    display: flex;
+    flex-direction: column;
+    height: 17%;
+    width: 30%;
+    box-shadow: 0px 0px 5px;
+    bottom: 20px;
+    right: 20px;
+    z-index: 5;
+    border-radius: 10px;
+    overflow: hidden;
+    animation: fade 1s 5s linear forwards, close 1s 6s linear forwards;
+}
+.toast-container>.header{
+    display: flex;
+    padding: 5px;
+    padding-left: 5px;
+    padding-right: 5px;
+    height: 40%;
+    justify-content: space-between;
+    align-items: center;
+}
+.toast-container>.header.Success{
+    background-color: rgb(4, 77, 42);
+    color: white;
+}
+.toast-container>.header.Danger{
+    background-color: #a00c1b;
+    color: white;
+}
+.toast-container>.Body{
+    padding-left: 10px;
+    width: auto;
+    height: 100%;
+    overflow-x: hidden;
+    font-size: 0.9rem;
+    overflow-y: auto;
+}
+.toast-container>.Body.Success{
+    background-color: rgb(25, 135, 84);
+    color: white;
+}
+.toast-container>.Body.Danger{
+    background-color: #dc3545;
+    color: white;
+}
+.toast-container>.header>.left-header{
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    gap: 10px;
+}
+.toast-container>.header>.right-header{
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    white-space: nowrap;
+    gap: 10px;
+}
+.toast-container>.header>.left-header>.icon{
+    width: 10%;
+    height: 10%;
+}
+.toast-container>.header>.right-header>.exit-icon{
+    font-size: 3rem;
+}
+.toast-container>.header>.left-header>.icon:hover,.toast-container>.header>.right-header>.exit-icon:hover{
+    cursor: pointer;
+}
+@keyframes fade {
+    from{
+        opacity: 1;
+    }
+    to{
+        opacity: 0;
+    }
+}
+@keyframes close {
+    from{
+        display: block;
+    }
+    to{
+        display: none;
+    }
+}

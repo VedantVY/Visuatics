@@ -1,0 +1,69 @@
+.ContactUs{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: Poppins;
+    width: 100%;
+    height: 100%;
+    min-width: 100vw;
+    min-height: 100vh;
+    background-image: none;
+    background-color: rgb(211, 209, 209);
+    overflow-y: scroll;
+    overflow-x: hidden;
+}
+.body{
+  position: relative;
+  width: 100%;
+  height: 100%;
+  top: 100px;
+  padding-bottom: 1rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+.contactUs-container{
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: stretch;
+    gap: 1%;
+    border: 0;
+    box-shadow: 0 0 5px;
+}
+.contactUs-container>.side-bar{
+    display: flex;
+    flex-direction: column;
+    padding: 1rem;
+    bottom: 0;
+    justify-content: center;
+    color: black;
+    align-items: center;
+    background-image: url("/wallhaven-ymz61d_1920x1080.png");
+    background-size: cover;
+}
+.contactUs-container>.side-bar>h2,.contactUs-container>.side-bar>p{
+    font-weight: bolder;
+}
+.contactUs-container>.form-container{
+    box-shadow: none;
+    padding: 0;
+}
+.contactUs-container>.form-container>form{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+}
+.contactUs-container>.form-container>form>button{
+    font-size: 1.2rem;
+    padding: 1rem;
+    background-color: black;
+    color: white;
+    border-radius: 10% / 10%;
+    cursor: pointer;
+    border: 0;
+}

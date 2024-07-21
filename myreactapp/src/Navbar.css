@@ -1,0 +1,123 @@
+.navbar-container{
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: fit-content;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    background-color: rgba(255, 255, 255, 0.5);
+    box-shadow: 0px 0px 5px black;
+    z-index: 5;
+}
+.navbar-container>.web-container{
+    padding-left: 10px; 
+    display: flex;
+    gap: 1%;
+    align-items: center;
+}
+.navbar-container>.web-container>.logo{
+    width: 25%;
+}
+.navbar-container>.web-container>.Name{
+    color: blue;
+}
+.navbar-container>.web-container>.Name:hover{
+    cursor: pointer;
+}
+.navbar-container>.web-container>.Name>span{
+    color: red;
+}
+.navbar-container>ul.options{
+    display: flex;
+    padding-right: 20px;
+    justify-content: end;
+    align-items: center;
+    gap: 50px;
+}
+.navbar-container>ul.options>li{
+    position:relative;
+}
+.navbar-container>ul.options>li , li{
+    list-style: none;
+}
+.navbar-container>ul.options>li>a{
+    text-decoration: none;
+    color: black;
+}
+.navbar-container>ul.options>img.user-profile{
+    cursor: pointer;
+    border-radius: 50%;
+    width: 6%;
+    object-fit: cover;
+}
+.navbar-container>.Menu{
+    display: none;
+    position: fixed;
+    width: fit-content;
+    top: 12%;
+    right: 1%;
+    height: 40%;
+    width: auto;
+    flex-direction: column;
+    align-items: center;
+    background-color: rgba(255, 255, 255, 0.5);
+    z-index: 5;
+    border-radius: 10px;
+    box-shadow: 0px 0px 5px;
+}
+.navbar-container>.Menu>.profile-image{
+    margin-top: 5%;
+    height: 30%;
+    border-radius: 50%;
+}
+.navbar-container>.Menu>p{
+    margin-top: 5%;
+    margin-bottom: 0;
+    color: grey;
+    cursor: default;
+}
+.navbar-container>.Menu>ul{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    margin-top: 5%;
+    padding-left: 0px;
+    padding-top: 5%;
+    flex-grow: 2;
+    border-top: 1px solid gray;
+    gap: 5%;
+}
+.navbar-container>.Menu>ul>li{
+    padding: 1% 20px;
+    width: 100%;
+    text-align: center;
+}
+.navbar-container>.Menu>ul>li:hover{
+    cursor: pointer;
+    background-color: rgb(252, 161, 100);
+}
+.navbar-container>ul.options>li.tab:hover::after{
+    position: absolute;
+    content: '';
+    width: 100%;
+    height: 10%;
+    background-color: rgb(221, 100, 20);
+    left: 0;
+    bottom: -10%;
+    animation: scale 0.25s linear forwards;
+}
+.navbar-container>.Menu>ul>li>a{
+    text-decoration: none;
+    color: black;
+}
+@keyframes scale {
+    from{
+        scale: 0 1;
+    }
+    to{
+        scale: 1 1
+    }
+}

@@ -1,0 +1,88 @@
+.container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 70%;
+    width: 130%;
+    gap: 20px;
+    padding-left: 2%;
+    padding-right: 2%;
+    border-radius: 10px;
+    background-color: rgba(255, 255, 255, 0.281);
+    backdrop-filter: blur(10px);
+}
+button:hover{
+    cursor: pointer;
+}
+button.plus{
+    font-size: 1.5rem;
+    padding: 4%;
+    padding-left: 6%;
+    padding-right: 6%;
+    background-color: purple;
+    color: white;
+    border-radius: 5%;
+    border: 0;
+}
+button.delete{
+    position: absolute;
+    font-size: 1.5rem;
+    padding: 4%;
+    border-radius: 8%;
+    background-color: red;
+    color: white;
+    border: 0;
+    padding-left: 4%;
+    padding-right: 4%;
+    right: 5%;
+}
+button.clear{
+    padding: 3%;
+    background-color: purple;
+    color: white;
+    border: 0;
+    border-radius: 8%;
+    font-size: 1.1rem;
+    white-space: nowrap;
+}
+.container>.newToDo{
+    display: flex;
+    font-size: 1.1rem;
+    justify-content: center;
+    align-items: center;
+    gap: 5%;
+
+}
+.container>.rest-input{
+    display: flex;
+    width: 76%;
+    font-size: 1rem;
+    flex-direction: column;
+}
+.container>.rest-input>.portfolio{
+    position: relative;
+    display: flex;
+    padding: 5%;
+    font-size: 1.1rem;
+    justify-content: center;
+    align-items: center;
+}
+.container>.rest-input>.portfolio>input{
+    flex-grow: 2;
+}
+.container>.status{
+    display: flex;
+    justify-self: center;
+    justify-content: space-between;
+    align-items: center;
+    gap: 5%;
+}
+.pending-tasks{
+    white-space: nowrap;
+}
+input{
+    padding: 5%;
+    white-space: nowrap;
+    font-size: 1.1rem;
+}

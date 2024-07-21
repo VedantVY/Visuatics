@@ -1,0 +1,61 @@
+.Register{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: Poppins;
+    width: 100%;
+    height: 100%;
+    min-width: 100vw;
+    min-height: 100vh;
+    background-image: url("/wallhaven-8586my_1920x1080.png");
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.Register>.form-container{
+    display: flex;
+    flex-direction: column;
+    border-radius: 10px;
+    box-shadow: 0px 0px 3px;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    background-color: rgba(0, 0, 0, 0.4);
+    backdrop-filter: blur(10px);
+}
+.form-container>div.heading{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    line-height: 0px;
+    padding-top: 10px;
+}
+.form-container>form{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    row-gap: 40px;
+    column-gap: 20px;
+    padding: 50px;
+    border-radius: 20px;
+}
+.Register>.form-container>.SignIn{
+    display: flex;
+    align-items: center;
+    gap: 1%;
+}
+.Register>.form-container>.SignIn>p,.Register>.form-container>.SignIn>a{
+    white-space: nowrap;
+    color: red;
+}
+.Register>.form-container>.SignIn>p,.Register>.form-container>.SignIn>.link{
+    color: white;
+}
+.Register>.form-container>form>.input-container>label{
+    color: white;
+    background-color: black;
+}
+.Register>.form-container>form>.input-container>input{
+    background-color: transparent;
+    color: white;
+}

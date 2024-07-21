@@ -1,0 +1,30 @@
+.button-container>button{
+    font-size: 1.2rem;
+    border: 0px solid black;
+    border-radius: 5px;
+    padding: 10px;
+}
+.button-container>button:hover{
+    cursor: pointer;
+}
+.button-container>button.Success{
+    background-color: rgb(9, 170, 9);
+    color: white;
+}
+.button-container>button.Success:hover{
+    background-color: rgb(5, 124, 5);
+}
+.button-container>button.Safe{
+    background-color: rgb(38, 38, 233);
+    color: white;
+}
+.button-container>button.Safe:hover{
+    background-color: rgb(31, 31, 133);
+}
+.button-container>button.Danger{
+    background-color: rgb(255,0,0);
+    color: white;
+}
+.button-container>button.Danger:hover{
+    background-color: rgb(148, 10, 10);
+}

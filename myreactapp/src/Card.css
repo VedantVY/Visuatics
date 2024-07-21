@@ -1,0 +1,191 @@
+.card-container{
+    position: relative;
+    height: 500px;
+    width: 300px;
+    margin: 10px;
+    overflow: hidden;
+    border-radius: 10px;
+    background-color: rgb(255, 237, 237);
+    color: black;
+    box-shadow: 0px 0px 5px;
+}
+.card-container>i.fa.fa-thumbs-o-up.like,.card-container>i.fa.fa-thumbs-up.like{
+    position: absolute;
+    top: 2%;
+    right: 3%;
+    color: white;
+    border: 1px solid white;
+    backdrop-filter: blur(5px);
+    border-radius: 50%;
+    padding: 3%;
+    font-size: 1.5rem;
+}
+.card-container>i.fa.fa-thumbs-o-up.like:hover,.card-container>i.fa.fa-thumbs-up.like:hover{
+    cursor: pointer;
+    transform: scale(1.05);
+    transition: 0.25s;
+}
+.card-container>.img-container{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
+.card-container>.img-container>img.image{
+    height: 100%;
+    object-fit: contain;
+}
+.card-container>.text-container{
+    margin-left: 10px;
+    padding-right: 10px;
+    height: calc(60% - 10px);
+    overflow-x: hidden;
+    overflow-y: auto;
+    scrollbar-width: thin;
+}
+.card-container:hover{
+    transform: scale(1.05);
+    transition: 0.25s;
+}
+.card-container:hover>.img-container{
+  height: 40%;
+  transition: 1s;
+}
+.card-container>.text-container>.interact{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.card-container>.text-container>.interact>.price{
+    padding: 3% 5%;  
+    border-radius: 10%;
+    font-size: smaller;
+    cursor: default;
+    color: rgb(122, 2, 22);
+    background-color: rgb(233, 79, 105);
+}
+.payment{
+  position: fixed;
+  display: none;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  width: 100%;
+  top: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.267);
+  backdrop-filter: blur(2px);
+  z-index: 10;
+}
+.payment>.payment-card{
+  background-color: white;
+  border-radius: 2%;
+  padding: 1% 1%;
+  height: 95%;
+  display: flex;
+  gap: 2%;
+  flex-direction: column;
+  overflow: hidden;
+}
+.payment>.payment-card>.top-info{
+  display: flex;
+  justify-content: space-between;
+}
+.payment>.payment-card>.top-info>.author-cred{
+  display: flex;
+  flex-direction: row;
+  justify-content: start;
+  gap: 2%;
+  align-items: center;
+}
+.payment>.payment-card>.top-info>.author-cred>.profile{
+  width: 10%;
+  border-radius: 50%;
+}
+.payment>.payment-card>.top-info>.purchase-section{
+  display: flex;
+  align-items: center;
+  justify-content: end;
+  gap: 8%;
+}
+.payment>.payment-card>.top-info>.purchase-section>button.buy{
+  display: block;
+  padding: 5% 10%;
+  font-size: 1.2rem;
+  border: 0;
+  border-radius: 5%;
+  background-color: rgb(230, 10, 10);
+  color: white;
+}
+.payment>.payment-card>.top-info>.purchase-section>button.buy{
+    cursor: pointer;
+}
+.payment>.payment-card>.top-info>.purchase-section>button.like{
+  background-color: rgb(16, 82, 206);
+  font-size: 1.2rem;
+  color: white;
+  border: 0;
+  border-radius: 5%;
+  padding: 5% 10%;
+}
+.payment>.payment-card>.top-info>.purchase-section>button.like:hover{
+    cursor: pointer;
+}
+.payment>.payment-card>.wallpaper{
+  height: 40%;
+  object-fit: cover;
+}
+.payment>.payment-card>.description>.stats{
+  display: flex;
+  gap: 5%;
+}
+.payment>.payment-card>.description>.stats>.item{
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+.payment>.payment-card>.description>.stats>.item>.title{
+  margin-bottom: 0;
+}
+.payment>.payment-card>.description>.stats>.item>.value{
+  margin-top: 0;
+  color: grey;
+}
+.payment>.payment-card>.description>.other-items{
+  display: flex;
+  flex-direction: column;
+}
+.payment>.payment-card>.description>.other-items>.other-item{
+  display: flex;
+  align-items: center;
+  gap: 1%;
+}
+.payment>.payment-card>.description>.other-items>.other-item>.content>span{
+  color: grey;
+}
+.payment>.payment-card>.description>.tags{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 5%;
+}
+.payment>.payment-card>.description>.tags>.tag-item{
+  padding: 1%;
+  width: fit-content;
+  height: fit-content;
+  border-radius: 5%;
+  background-color: rgb(255, 108, 152);
+}
+#Tag{
+  margin: 0;
+}
+.payment>.close-icon{
+  position: absolute;
+  font-size: 3rem;
+  color: rgb(230, 10, 10);
+  top: 1%;
+  right: 2%;
+}
+.payment>.close-icon:hover{
+  cursor: pointer;
+}

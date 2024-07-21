@@ -1,0 +1,42 @@
+.input-container{
+    position: relative;
+}
+.input-container>label{
+    position: absolute;
+    color: rgb(0, 0, 0);
+    top: -22px;
+    left: 5px;
+    padding: 3px;
+    font-size: 1.1rem;
+    border-radius: 10px;
+    backdrop-filter: blur(30px);
+}
+.input-container>input,.input-container>textarea{
+    outline: none;
+    border: 2px solid black;
+    padding: 8px;
+    font-size: 1.5rem;
+    border-radius: 12px;
+}
+.input-container>input:hover,.input-container>input:focus,.input-container>textarea:hover,.input-container>textarea:focus{
+    border-color: rgb(158, 53, 15);
+    transition: 0.5s;
+}
+.input-container>p.error{
+    display: none;
+}
+.input-container>p.errorActive{
+    color: red;
+    font-size: 0.9rem;
+    display: block;
+}
+.input-container>i{
+    position: absolute;
+    font-size: 1.5rem;
+    top: 10px;
+    right: 15px;
+    background-color: inherit;
+}
+.input-container>input#ProfilePicture{
+    font-size: 0.98rem;
+}

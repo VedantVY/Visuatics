@@ -1,0 +1,60 @@
+.LogIn{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: Poppins;
+    width: 100%;
+    height: 100%;
+    min-width: 100vw;
+    min-height: 100vh;
+    background-image: url("/wallhaven-8586my_1920x1080.png");
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.LogIn>.form-container,.decor-section{
+    display: flex;
+    flex-direction: column;
+    border-radius: 10px;
+    box-shadow: 0px 0px 3px;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    background-color: rgba(0, 0, 0, 0.5);
+    backdrop-filter: blur(10px);
+}
+.LogIn>.form-container>div.heading{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    line-height: 0px;
+    padding-top: 10px;
+}
+.LogIn>.form-container>form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.LogIn>.form-container>form>.SignUp{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 1%;
+}
+.LogIn>.form-container>form>.SignUp>p,.form-container>form>.SignUp>a{
+    padding: 1%;
+    white-space: nowrap;
+    color: red;
+}
+.LogIn>.form-container>form>.SignUp>p,.form-container>form>.SignUp>.link{
+    color: white;
+}
+.LogIn>.form-container>form>.input-container>label{
+    color: white;
+    background-color: black;
+}
+.LogIn>.form-container>form>.input-container>input{
+    background-color: transparent;
+    color: white;
+}

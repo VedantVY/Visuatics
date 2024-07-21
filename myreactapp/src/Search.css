@@ -1,0 +1,53 @@
+.search-wrapper{
+    display: flex;
+    align-items: start;
+    gap: 5%;
+}
+.search-wrapper>.search-container{
+    display: flex;
+    margin-top: 1.5%;
+    flex-direction: column;
+    width: max-content;
+    overflow-y: auto;
+    justify-content: center;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0px 0px 4px;
+    z-index: 4;
+}
+.search-wrapper>.search-container>.search-bar{
+    position: relative;
+}
+.search-wrapper>.search-container>.search-bar>input.search,.search-wrapper>.search-container>.search-bar>input.search:active{
+    outline: none;
+    border: none;
+    width: 83%;
+    background-color: white;
+    color: black;
+    padding: 5px;
+    padding-left: 14%;
+    border-radius: 10px;
+    font-size: 1.2rem;
+}
+.search-wrapper>.search-container>.search-bar>.search-icon.fa.fa-search{
+    position: absolute;
+    font-size: 1.2rem;
+    top: 15%;
+    left: 2%;
+}
+.search-wrapper>.search-container>.search-suggestions{
+    display: none;
+}
+.search-bar:focus-within + .search-suggestions{
+    display: block;
+}
+.search-wrapper>.search-container>.search-suggestions:hover{
+    display: block;
+}
+.search-wrapper>.search-container>.search-suggestions>.item{
+    padding-left: 5%;
+}
+.search-wrapper>.search-container>.search-suggestions>.item:hover{
+    cursor: pointer;
+    background-color: rgb(223, 222, 222);
+}
